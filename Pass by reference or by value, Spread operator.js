@@ -12,11 +12,11 @@ const obj = {
     b: 1
 };
 
-// const copy = obj; // В переменной copy - помещается ссылка на obj; Модифицируя копию - мы модифицируем изначальный обьект.
+const copy = obj; // В переменной copy - помещается ссылка на obj; Модифицируя копию - мы модифицируем изначальный обьект.
 
-// copy.a = 10;
-// console.log(copy);
-// console.log(obj);
+copy.a = 10;
+console.log(copy);
+console.log(obj);
 
 function copy(mainObj) {
     let objCopy = {};
